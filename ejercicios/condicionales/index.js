@@ -58,3 +58,32 @@ console.log('Error')
 else{
   console.log(division)
 }
+
+// sumar restar multiplicar o dividir
+
+let sum_rest_mult_div= prompt('Sumar restar multiplicar o dividir ').toLowerCase();
+
+
+let primnum=parseFloat(prompt('Ingrese el primer numero'))
+let segnum=parseFloat(prompt('Ingrese el segundo numero'))
+
+switch (sum_rest_mult_div){
+  case ('sumar'):
+    res= primnum+segnum;
+      console.log(res)
+  break
+  case ('restar'):
+    res= primnum-segnum;
+    console.log(res)
+  break
+  case ('multiplicar'):
+    res= primnum*segnum;
+    console.log(res)
+  case ('dividir'):
+    res= primnum/segnum;
+    console.log(res)
+  break
+  default: console.log('Ingrese una opción válida')
+  break
+
+}
